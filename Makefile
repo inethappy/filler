@@ -1,15 +1,18 @@
 NAME	=	mkotytsk.filler
 CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror
-SOURCES	=	first.c
+SOURCES	=	first.c validation.c
 OBJECTS	=	$(SOURCES:.c=.o)
-LIB		=	libft/
+LIBFT	=	libft/libft.a
+PRINTF	=	ft_printf/libftprintf.a
 
 all:	$(NAME)
 
 $(NAME):
-	 @make -C $(LIB)
-	 $(CC) $(SOURCES) -L $(LIB) libft/*.c -I libft/libft.h -o $(NAME) #$(CFLAGS)
+	#  @make -C $(LIBFT)
+	#  @make -C $(PRINTF)
+	 $(CC) $(SOURCES) $(LIBFT) $(PRINTF) -o $(NAME)
+	 # -L $(LIBFT) libft/*.c -I libft/libft.h -I ft_printf/ft_printf.h -o $(NAME) #$(CFLAGS)
 %.o: ./%.c
 	gcc -o $@ -c $<
 test:
