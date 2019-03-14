@@ -3,7 +3,37 @@
 
 CMakeFiles/filler.dir/first.c.o: ../filler.h
 CMakeFiles/filler.dir/first.c.o: ../first.c
+CMakeFiles/filler.dir/first.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/filler.dir/first.c.o: ../libft/libft.h
+
+CMakeFiles/filler.dir/ft_printf/flags.c.o: .././libft/libft.h
+CMakeFiles/filler.dir/ft_printf/flags.c.o: ../ft_printf/flags.c
+CMakeFiles/filler.dir/ft_printf/flags.c.o: ../ft_printf/ft_printf.h
+
+CMakeFiles/filler.dir/ft_printf/ft_printf.c.o: ../ft_printf/ft_printf.c
+CMakeFiles/filler.dir/ft_printf/ft_printf.c.o: ../ft_printf/ft_printf.h
+
+CMakeFiles/filler.dir/ft_printf/handling.c.o: .././libft/libft.h
+CMakeFiles/filler.dir/ft_printf/handling.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/handling.c.o: ../ft_printf/handling.c
+
+CMakeFiles/filler.dir/ft_printf/help_functions.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/help_functions.c.o: ../ft_printf/help_functions.c
+
+CMakeFiles/filler.dir/ft_printf/numbers_func.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/numbers_func.c.o: ../ft_printf/numbers_func.c
+
+CMakeFiles/filler.dir/ft_printf/print_csp.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/print_csp.c.o: ../ft_printf/print_csp.c
+
+CMakeFiles/filler.dir/ft_printf/print_float.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/print_float.c.o: ../ft_printf/print_float.c
+
+CMakeFiles/filler.dir/ft_printf/print_numbers.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/print_numbers.c.o: ../ft_printf/print_numbers.c
+
+CMakeFiles/filler.dir/ft_printf/printing.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/printing.c.o: ../ft_printf/printing.c
 
 CMakeFiles/filler.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/filler.dir/libft/ft_atoi.c.o: ../libft/libft.h
@@ -193,4 +223,9 @@ CMakeFiles/filler.dir/libft/ft_words_counter.c.o: ../libft/libft.h
 
 CMakeFiles/filler.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/filler.dir/libft/get_next_line.c.o: ../libft/libft.h
+
+CMakeFiles/filler.dir/validation.c.o: ../filler.h
+CMakeFiles/filler.dir/validation.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/filler.dir/validation.c.o: ../libft/libft.h
+CMakeFiles/filler.dir/validation.c.o: ../validation.c
 

@@ -4,7 +4,37 @@
 CMakeFiles/filler.dir/first.c.o
  /Users/mkotytsk/Desktop/filler/filler.h
  /Users/mkotytsk/Desktop/filler/first.c
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
  /Users/mkotytsk/Desktop/filler/libft/libft.h
+CMakeFiles/filler.dir/ft_printf/flags.c.o
+ .././libft/libft.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/flags.c
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/ft_printf.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.c
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+CMakeFiles/filler.dir/ft_printf/handling.c.o
+ .././libft/libft.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/handling.c
+CMakeFiles/filler.dir/ft_printf/help_functions.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/help_functions.c
+CMakeFiles/filler.dir/ft_printf/numbers_func.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/numbers_func.c
+CMakeFiles/filler.dir/ft_printf/print_csp.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/print_csp.c
+CMakeFiles/filler.dir/ft_printf/print_float.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/print_float.c
+CMakeFiles/filler.dir/ft_printf/print_numbers.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/print_numbers.c
+CMakeFiles/filler.dir/ft_printf/printing.c.o
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/printing.c
 CMakeFiles/filler.dir/libft/ft_atoi.c.o
  /Users/mkotytsk/Desktop/filler/libft/ft_atoi.c
  /Users/mkotytsk/Desktop/filler/libft/libft.h
@@ -194,3 +224,8 @@ CMakeFiles/filler.dir/libft/ft_words_counter.c.o
 CMakeFiles/filler.dir/libft/get_next_line.c.o
  /Users/mkotytsk/Desktop/filler/libft/get_next_line.c
  /Users/mkotytsk/Desktop/filler/libft/libft.h
+CMakeFiles/filler.dir/validation.c.o
+ /Users/mkotytsk/Desktop/filler/filler.h
+ /Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+ /Users/mkotytsk/Desktop/filler/libft/libft.h
+ /Users/mkotytsk/Desktop/filler/validation.c

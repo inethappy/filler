@@ -150,6 +150,249 @@ first.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/first.c.s
 .PHONY : first.c.s
 
+ft_printf/flags.o: ft_printf/flags.c.o
+
+.PHONY : ft_printf/flags.o
+
+# target to build an object file
+ft_printf/flags.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/flags.c.o
+.PHONY : ft_printf/flags.c.o
+
+ft_printf/flags.i: ft_printf/flags.c.i
+
+.PHONY : ft_printf/flags.i
+
+# target to preprocess a source file
+ft_printf/flags.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/flags.c.i
+.PHONY : ft_printf/flags.c.i
+
+ft_printf/flags.s: ft_printf/flags.c.s
+
+.PHONY : ft_printf/flags.s
+
+# target to generate assembly for a file
+ft_printf/flags.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/flags.c.s
+.PHONY : ft_printf/flags.c.s
+
+ft_printf/ft_printf.o: ft_printf/ft_printf.c.o
+
+.PHONY : ft_printf/ft_printf.o
+
+# target to build an object file
+ft_printf/ft_printf.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/ft_printf.c.o
+.PHONY : ft_printf/ft_printf.c.o
+
+ft_printf/ft_printf.i: ft_printf/ft_printf.c.i
+
+.PHONY : ft_printf/ft_printf.i
+
+# target to preprocess a source file
+ft_printf/ft_printf.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/ft_printf.c.i
+.PHONY : ft_printf/ft_printf.c.i
+
+ft_printf/ft_printf.s: ft_printf/ft_printf.c.s
+
+.PHONY : ft_printf/ft_printf.s
+
+# target to generate assembly for a file
+ft_printf/ft_printf.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/ft_printf.c.s
+.PHONY : ft_printf/ft_printf.c.s
+
+ft_printf/handling.o: ft_printf/handling.c.o
+
+.PHONY : ft_printf/handling.o
+
+# target to build an object file
+ft_printf/handling.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/handling.c.o
+.PHONY : ft_printf/handling.c.o
+
+ft_printf/handling.i: ft_printf/handling.c.i
+
+.PHONY : ft_printf/handling.i
+
+# target to preprocess a source file
+ft_printf/handling.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/handling.c.i
+.PHONY : ft_printf/handling.c.i
+
+ft_printf/handling.s: ft_printf/handling.c.s
+
+.PHONY : ft_printf/handling.s
+
+# target to generate assembly for a file
+ft_printf/handling.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/handling.c.s
+.PHONY : ft_printf/handling.c.s
+
+ft_printf/help_functions.o: ft_printf/help_functions.c.o
+
+.PHONY : ft_printf/help_functions.o
+
+# target to build an object file
+ft_printf/help_functions.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/help_functions.c.o
+.PHONY : ft_printf/help_functions.c.o
+
+ft_printf/help_functions.i: ft_printf/help_functions.c.i
+
+.PHONY : ft_printf/help_functions.i
+
+# target to preprocess a source file
+ft_printf/help_functions.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/help_functions.c.i
+.PHONY : ft_printf/help_functions.c.i
+
+ft_printf/help_functions.s: ft_printf/help_functions.c.s
+
+.PHONY : ft_printf/help_functions.s
+
+# target to generate assembly for a file
+ft_printf/help_functions.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/help_functions.c.s
+.PHONY : ft_printf/help_functions.c.s
+
+ft_printf/numbers_func.o: ft_printf/numbers_func.c.o
+
+.PHONY : ft_printf/numbers_func.o
+
+# target to build an object file
+ft_printf/numbers_func.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/numbers_func.c.o
+.PHONY : ft_printf/numbers_func.c.o
+
+ft_printf/numbers_func.i: ft_printf/numbers_func.c.i
+
+.PHONY : ft_printf/numbers_func.i
+
+# target to preprocess a source file
+ft_printf/numbers_func.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/numbers_func.c.i
+.PHONY : ft_printf/numbers_func.c.i
+
+ft_printf/numbers_func.s: ft_printf/numbers_func.c.s
+
+.PHONY : ft_printf/numbers_func.s
+
+# target to generate assembly for a file
+ft_printf/numbers_func.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/numbers_func.c.s
+.PHONY : ft_printf/numbers_func.c.s
+
+ft_printf/print_csp.o: ft_printf/print_csp.c.o
+
+.PHONY : ft_printf/print_csp.o
+
+# target to build an object file
+ft_printf/print_csp.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_csp.c.o
+.PHONY : ft_printf/print_csp.c.o
+
+ft_printf/print_csp.i: ft_printf/print_csp.c.i
+
+.PHONY : ft_printf/print_csp.i
+
+# target to preprocess a source file
+ft_printf/print_csp.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_csp.c.i
+.PHONY : ft_printf/print_csp.c.i
+
+ft_printf/print_csp.s: ft_printf/print_csp.c.s
+
+.PHONY : ft_printf/print_csp.s
+
+# target to generate assembly for a file
+ft_printf/print_csp.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_csp.c.s
+.PHONY : ft_printf/print_csp.c.s
+
+ft_printf/print_float.o: ft_printf/print_float.c.o
+
+.PHONY : ft_printf/print_float.o
+
+# target to build an object file
+ft_printf/print_float.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_float.c.o
+.PHONY : ft_printf/print_float.c.o
+
+ft_printf/print_float.i: ft_printf/print_float.c.i
+
+.PHONY : ft_printf/print_float.i
+
+# target to preprocess a source file
+ft_printf/print_float.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_float.c.i
+.PHONY : ft_printf/print_float.c.i
+
+ft_printf/print_float.s: ft_printf/print_float.c.s
+
+.PHONY : ft_printf/print_float.s
+
+# target to generate assembly for a file
+ft_printf/print_float.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_float.c.s
+.PHONY : ft_printf/print_float.c.s
+
+ft_printf/print_numbers.o: ft_printf/print_numbers.c.o
+
+.PHONY : ft_printf/print_numbers.o
+
+# target to build an object file
+ft_printf/print_numbers.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_numbers.c.o
+.PHONY : ft_printf/print_numbers.c.o
+
+ft_printf/print_numbers.i: ft_printf/print_numbers.c.i
+
+.PHONY : ft_printf/print_numbers.i
+
+# target to preprocess a source file
+ft_printf/print_numbers.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_numbers.c.i
+.PHONY : ft_printf/print_numbers.c.i
+
+ft_printf/print_numbers.s: ft_printf/print_numbers.c.s
+
+.PHONY : ft_printf/print_numbers.s
+
+# target to generate assembly for a file
+ft_printf/print_numbers.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/print_numbers.c.s
+.PHONY : ft_printf/print_numbers.c.s
+
+ft_printf/printing.o: ft_printf/printing.c.o
+
+.PHONY : ft_printf/printing.o
+
+# target to build an object file
+ft_printf/printing.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/printing.c.o
+.PHONY : ft_printf/printing.c.o
+
+ft_printf/printing.i: ft_printf/printing.c.i
+
+.PHONY : ft_printf/printing.i
+
+# target to preprocess a source file
+ft_printf/printing.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/printing.c.i
+.PHONY : ft_printf/printing.c.i
+
+ft_printf/printing.s: ft_printf/printing.c.s
+
+.PHONY : ft_printf/printing.s
+
+# target to generate assembly for a file
+ft_printf/printing.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/ft_printf/printing.c.s
+.PHONY : ft_printf/printing.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1851,6 +2094,33 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+validation.o: validation.c.o
+
+.PHONY : validation.o
+
+# target to build an object file
+validation.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/validation.c.o
+.PHONY : validation.c.o
+
+validation.i: validation.c.i
+
+.PHONY : validation.i
+
+# target to preprocess a source file
+validation.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/validation.c.i
+.PHONY : validation.c.i
+
+validation.s: validation.c.s
+
+.PHONY : validation.s
+
+# target to generate assembly for a file
+validation.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/validation.c.s
+.PHONY : validation.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1863,6 +2133,33 @@ help:
 	@echo "... first.o"
 	@echo "... first.i"
 	@echo "... first.s"
+	@echo "... ft_printf/flags.o"
+	@echo "... ft_printf/flags.i"
+	@echo "... ft_printf/flags.s"
+	@echo "... ft_printf/ft_printf.o"
+	@echo "... ft_printf/ft_printf.i"
+	@echo "... ft_printf/ft_printf.s"
+	@echo "... ft_printf/handling.o"
+	@echo "... ft_printf/handling.i"
+	@echo "... ft_printf/handling.s"
+	@echo "... ft_printf/help_functions.o"
+	@echo "... ft_printf/help_functions.i"
+	@echo "... ft_printf/help_functions.s"
+	@echo "... ft_printf/numbers_func.o"
+	@echo "... ft_printf/numbers_func.i"
+	@echo "... ft_printf/numbers_func.s"
+	@echo "... ft_printf/print_csp.o"
+	@echo "... ft_printf/print_csp.i"
+	@echo "... ft_printf/print_csp.s"
+	@echo "... ft_printf/print_float.o"
+	@echo "... ft_printf/print_float.i"
+	@echo "... ft_printf/print_float.s"
+	@echo "... ft_printf/print_numbers.o"
+	@echo "... ft_printf/print_numbers.i"
+	@echo "... ft_printf/print_numbers.s"
+	@echo "... ft_printf/printing.o"
+	@echo "... ft_printf/printing.i"
+	@echo "... ft_printf/printing.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2052,6 +2349,9 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... validation.o"
+	@echo "... validation.i"
+	@echo "... validation.s"
 .PHONY : help
 
 

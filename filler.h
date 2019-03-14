@@ -7,6 +7,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
+# define ABS(Value) (((Value) < 0) ? -(Value) : (Value))
 
 typedef struct s_filler
 {
@@ -22,6 +23,9 @@ typedef struct s_input
 	int i;
 	char **map;
 	char **piece;
+	int xres;
+	int yres;
+	int min_d;
 
 }				t_input;
 

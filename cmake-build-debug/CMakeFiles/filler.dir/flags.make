@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/mkotytsk/Desktop/filler/. -I/Users/mkotytsk/Desktop/filler/libft 
+C_INCLUDES = -I/Users/mkotytsk/Desktop/filler/. -I/Users/mkotytsk/Desktop/filler/ft_printf -I/Users/mkotytsk/Desktop/filler/libft 
 

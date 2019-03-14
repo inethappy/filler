@@ -4,9 +4,20 @@ project(filler C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
+include_directories(ft_printf)
 include_directories(libft)
 
 add_executable(filler
+        ft_printf/flags.c
+        ft_printf/ft_printf.c
+        ft_printf/ft_printf.h
+        ft_printf/handling.c
+        ft_printf/help_functions.c
+        ft_printf/numbers_func.c
+        ft_printf/print_csp.c
+        ft_printf/print_float.c
+        ft_printf/print_numbers.c
+        ft_printf/printing.c
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_isalnum.c
@@ -72,4 +83,5 @@ add_executable(filler
         libft/get_next_line.c
         libft/libft.h
         filler.h
-        first.c)
+        first.c
+        validation.c)

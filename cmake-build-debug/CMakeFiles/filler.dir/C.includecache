@@ -6,3 +6,37 @@
 
 #IncludeRegexTransform: 
 
+/Users/mkotytsk/Desktop/filler/filler.h
+libft/libft.h
+/Users/mkotytsk/Desktop/filler/libft/libft.h
+ft_printf/ft_printf.h
+/Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+fcntl.h
+-
+
+/Users/mkotytsk/Desktop/filler/first.c
+filler.h
+/Users/mkotytsk/Desktop/filler/filler.h
+
+/Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.h
+stdio.h
+-
+stdarg.h
+-
+
+/Users/mkotytsk/Desktop/filler/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
+fcntl.h
+-
+

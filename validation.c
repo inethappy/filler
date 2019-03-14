@@ -42,18 +42,18 @@ char **save_input_map(t_input *new)
 	free(l);
 	get_next_line(0, &l);
 	free(l);
-	ft_strdel(xy);
-	xy = (char**)malloc(sizeof(char*) * new->y + 1);
+	// ft_strdel(xy);
+	new->map = (char**)malloc(sizeof(char*) * new->y + 1);
 	while (i < new->y)
 	{
 		get_next_line(0, &l);
-		if (!(xy[i] = valid(l, new, ".oOxX")))
-			return(NULL);
+		if (!(new->map[i] = valid(l, new, ".oOxX")))
+			return (NULL);
 		// printf("new[%d] = %s\n", i, xy[i]);
 		i++;
 	}
-	xy[i] = NULL;
-	return (xy);
+	new->map[i] = NULL;
+	return (new->map);
 }
 
 char **save_input_piece(t_input *new)
@@ -65,7 +65,7 @@ char **save_input_piece(t_input *new)
 	i = 0;
 	new->i = -1;
 	get_next_line(0, &l);
-	ft_strdel(xy);
+	// ft_strdel(xy);
 	i = 0;
 	xy = ft_strsplit((l + 6), 32);
 	new->x = ft_atoi(xy[1]);
@@ -79,5 +79,6 @@ char **save_input_piece(t_input *new)
 		// printf("piece[%d] = %s\n", i, new->piece[i]);
 		i++;
 	}
-	return (xy);
+	new->piece[i] = NULL;
+	return (new->piece);
 }

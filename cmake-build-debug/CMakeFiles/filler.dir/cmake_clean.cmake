@@ -1,4 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/filler.dir/ft_printf/flags.c.o"
+  "CMakeFiles/filler.dir/ft_printf/ft_printf.c.o"
+  "CMakeFiles/filler.dir/ft_printf/handling.c.o"
+  "CMakeFiles/filler.dir/ft_printf/help_functions.c.o"
+  "CMakeFiles/filler.dir/ft_printf/numbers_func.c.o"
+  "CMakeFiles/filler.dir/ft_printf/print_csp.c.o"
+  "CMakeFiles/filler.dir/ft_printf/print_float.c.o"
+  "CMakeFiles/filler.dir/ft_printf/print_numbers.c.o"
+  "CMakeFiles/filler.dir/ft_printf/printing.c.o"
   "CMakeFiles/filler.dir/libft/ft_atoi.c.o"
   "CMakeFiles/filler.dir/libft/ft_bzero.c.o"
   "CMakeFiles/filler.dir/libft/ft_isalnum.c.o"
@@ -63,6 +72,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/filler.dir/libft/ft_words_counter.c.o"
   "CMakeFiles/filler.dir/libft/get_next_line.c.o"
   "CMakeFiles/filler.dir/first.c.o"
+  "CMakeFiles/filler.dir/validation.c.o"
   "filler.pdb"
   "filler"
 )

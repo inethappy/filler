@@ -5,6 +5,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/mkotytsk/Desktop/filler/first.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/first.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/flags.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/flags.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/ft_printf.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/ft_printf.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/handling.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/handling.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/help_functions.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/help_functions.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/numbers_func.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/numbers_func.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/print_csp.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/print_csp.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/print_float.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/print_float.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/print_numbers.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/print_numbers.c.o"
+  "/Users/mkotytsk/Desktop/filler/ft_printf/printing.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/ft_printf/printing.c.o"
   "/Users/mkotytsk/Desktop/filler/libft/ft_atoi.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/ft_atoi.c.o"
   "/Users/mkotytsk/Desktop/filler/libft/ft_bzero.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/ft_bzero.c.o"
   "/Users/mkotytsk/Desktop/filler/libft/ft_isalnum.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/ft_isalnum.c.o"
@@ -68,12 +77,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mkotytsk/Desktop/filler/libft/ft_toupper.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/ft_toupper.c.o"
   "/Users/mkotytsk/Desktop/filler/libft/ft_words_counter.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/ft_words_counter.c.o"
   "/Users/mkotytsk/Desktop/filler/libft/get_next_line.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/libft/get_next_line.c.o"
+  "/Users/mkotytsk/Desktop/filler/validation.c" "/Users/mkotytsk/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/validation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
+  "../ft_printf"
   "../libft"
   )
 
