@@ -94,6 +94,7 @@ int				get_next_line(int fd, char **line)
 
 	res = 0;
 	var = 0;
+
 	if (!line || BUFF_SIZE <= 0 || fd < 0 || (res = read(fd, tmp, 0)) < 0)
 		return (-1);
 	*line = NULL;
