@@ -5,27 +5,21 @@ char *valid(char *l, t_input *new, char *chr, int x)
 	int j = -1;
 	char *str;
 	int k;
-	FILE *fd;
-	fd = fopen("tr.txt", "a");
+	// FILE *fd;
+	// fd = fopen("tr.txt", "a");
 
-	// fprintf(fd, "---wfkwfwjfwlfjlws\n");
-	// fprintf(fd, "!!!%s\n", l);
+	str = NULL;
 	k = new->i;
-	str = ft_strnew(x + 1);
+	str = ft_strnew(x);
 	while (l[++k])
 	{
-	// fprintf(fd, "---!!!%s\n", l);
 		if (!ft_strchr(chr, l[k]) || j > x)
 			return (NULL);
 		str[++j] = l[k];
-	// fprintf(fd, "$$$%c\n", l[k]);
 	}
 	str[++j] = '\0';
-	// fprintf(fd, "---!!!j = %d, new->x = %d, l = %c\n", j, new->x, l[k]);
-	// fprintf(fd, "@@!!!%s\n", l);
 	if (j < (x - 1))
 		return (NULL);
-	free(l);
 	return (str);
 }
 
@@ -41,30 +35,15 @@ char **save_input_map(t_input *new)
     char *l;
 	int i;
 
-	FILE *fd;
-	fd = fopen("tr.txt", "a");
-
-	new->i = 3;
-	get_next_line(0, &l);
-	fprintf(fd, "---%s\n", l);
-	i = 0;
-	if (ft_strlen(l) <= 10)
-		return (NULL);
-	xy = ft_strsplit((l + 8), 32);
-	new->xm = ft_atoi(xy[1]);
-	new->ym = ft_atoi(xy[0]);
-	fprintf(fd, "---%d\n", new->ym);
+	if (!get_next_line(0, &l))
+		return NULL;
 	free(l);
-	get_next_line(0, &l);
-	free(l);
-	new->map = (char**)malloc(sizeof(char*) * new->ym + 1);
 	while (i < new->ym)
 	{
 		get_next_line(0, &l);
-		if (!(new->map[i] = valid(l, new, ".oOxX", new->xm)))
-			return (NULL);
-		// printf("new[%d] = %s\n", i, new->map[i]);
+		new->map[i] = ft_strdup(l + 4);
 		i++;
+		ft_strdel(&l);
 	}
 	new->map[i] = NULL;
 	return (new->map);
@@ -84,20 +63,26 @@ char **save_input_piece(t_input *new)
 	// fprintf(fd, "in save_input_piece %s\n", l);// ft_strdel(xy);
 	i = 0;
 	if (ft_strlen(l) <= 8)
+	{
+		if (l)
+			ft_strdel(&l);
 		return (NULL);
+	}
 	xy = ft_strsplit((l + 6), 32);
 	new->x = ft_atoi(xy[1]);
 	new->y = ft_atoi(xy[0]);
 	new->piece = (char**)malloc(sizeof(char*) * new->y + 1);
+	ft_strdel(&l);
+	free(xy[0]);
+	free(xy[1]);
+	free(xy);
 	while (i < new->y)
 	{
 		get_next_line(0, &l);
-		if (!(new->piece[i] = valid(l, new, ".*", new->x)))
-			return(NULL);
-		// printf("piece[%d] = %s\n", i, new->piece[i]);
+		new->piece[i] = ft_strdup(l);
 		i++;
+		ft_strdel(&l);
 	}
-	// fprintf(fd, "+++ %s\n", l);// ft_strdel(xy);
 	new->piece[i] = NULL;
 	return (new->piece);
 }
