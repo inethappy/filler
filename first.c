@@ -35,78 +35,36 @@ void search_path(t_filler *base, t_input *new, int cj, int ci, int cjp, int cip)
 	}
 }
 
-int check_tail(t_input *new, int *j, int *i, int jp, int ip)
-{
-	int j_tmp;
-	int i_tmp;
-
-	j_tmp = 0;
-	i_tmp = 0;
-
-	if (*j < 0)
-	{
-		while (j_tmp < jp)
-		{
-			if (ft_strchr(new->piece[j_tmp], 42))
-				return (0);
-			j_tmp++;
-		}
-		j_tmp = 0;
-		*j = 0;
-	}
-	if (*i < 0)
-	{
-		while (new->piece[j_tmp])
-		{
-			while (new->piece[j_tmp][i_tmp] && i_tmp < ip)
-			{
-				if (new->piece[j_tmp][i_tmp] == '*')
-					return (0);
-				i_tmp++;
-			}
-			i_tmp = 0;
-			j_tmp++;
-		}
-		*i = 0;
-	}
-	return (1);
-}
-
 int check(t_filler *base, t_input *new, int jp, int ip, int j, int i)
 {
 	int bi;
-	int bip;
-	char **buf;
 
 	bi = -1;
-	buf = new->map;
-	buf[bi] = NULL;
 	int h = j;
 	int u = i;
-	buf[j][i] = 'a';
+	new->map[j][i] = 'a';
 	i = i - ip;
 	j = j - jp;
 	if (i < 0 || j < 0)
-		if (!check_tail(new, &j, &i, jp, ip))
-			{
-				buf[h][u] = 'o';/////
-				return (0);
-			}
+	{
+		new->map[h][u] = (base->player == 1) ? 'O' : 'X';
+		return (0);
+	}
 	ip = -1;
 	jp = -1;
 	bi = i;
-	while (buf[j] && (++jp < new->y))
+	while (new->map[j] && (++jp < new->y))
 	{
-		while (buf[j][i] && (++ip < new->x))
+		while (new->map[j][i] && (++ip < new->x))
 		{
-			if (((ft_strchr(base->me, buf[j][i]) || ft_strchr(base->bot, buf[j][i])) && new->piece[jp][ip] != '.'))// || !buf[j][i])
+			if (((ft_strchr(base->me, new->map[j][i]) || ft_strchr(base->bot, new->map[j][i])) && new->piece[jp][ip] != '.'))
 			{
-				buf[h][u] = 'o';/////
+				new->map[h][u] = (base->player == 1) ? 'O' : 'X';
 				return (0);
 			}
 			i++;
 		}
-		if (!buf[j][i])
+		if (!new->map[j][i])
 			break ;
 		j++;
 		i = bi;
@@ -118,7 +76,7 @@ int check(t_filler *base, t_input *new, int jp, int ip, int j, int i)
 		{
 			if (new->piece[jp][ip] == 42)
 			{
-				buf[h][u] = 'o';/////
+				new->map[h][u] = (base->player == 1) ? 'O' : 'X';
 				return (0);
 			}
 			ip++;
@@ -126,19 +84,19 @@ int check(t_filler *base, t_input *new, int jp, int ip, int j, int i)
 		}
 		jp++;
 	}
-	if (jp < (new->y))//-1
+	if (jp < (new->y))
 	{
 		while (jp < new->y)
 		{
 			if (ft_strchr(new->piece[jp], 42))
 			{
-				buf[h][u] = 'o';/////
+				new->map[h][u] = (base->player == 1) ? 'O' : 'X';
 				return (0);
 			}
 			jp++;
 		}
 	}
-	buf[h][u] = 'o';/////
+	new->map[h][u] = (base->player == 1) ? 'O' : 'X';
 	return (1);
 }
 
@@ -153,11 +111,8 @@ void put_piece(t_input *new, t_filler *base, int j, int i)
 		while (new->piece[jp][ip])
 		{
 			if (new->piece[jp][ip] == '*')
-				if (check(base, new, jp, ip, j, i))//ABS(j - jp), ABS(i - ip)))
-				{
+				if (check(base, new, jp, ip, j, i))
 					search_path(base, new, j, i, jp, ip);
-						// break ;
-				}
 			ip++;
 		}
 		ip = 0;
@@ -188,6 +143,8 @@ void ft_next_move(t_input *new, t_filler *base)
 int game(t_input *new, t_filler *base)
 {
 	int i;
+    char *l;
+	l = NULL;
 
 	i = 0;
 	new->min_d = -1;
@@ -198,23 +155,10 @@ int game(t_input *new, t_filler *base)
 		return(0);
 	ft_next_move(new, base);
 	ft_printf("%d %d\n", new->yres, new->xres);
-	while (new->map[i] != NULL)
-	{
-		ft_strdel(&new->map[i]);
-		i++;
-	}
-	i = 0;
-	while (new->piece[i] != NULL)
-	{
-		ft_strdel(&new->piece[i]);
-		i++;
-	}
-	free(new->piece);
 	new->yres = 0;
 	new->xres = 0;
-    char *l;
-		get_next_line(0, &l);
-	ft_strdel(&l);
+	get_next_line(0, &l);
+	free(l);
 	return (1);
 }
 
@@ -235,21 +179,23 @@ int main(void)
 		if (!l[10] || (l[10] != '1' && l[10] != '2') || (l[11] != ' '))
 			return(p_error("kokoko"));
 		base.player = l[10] - 48;
-		base.me = (base.player == 1) ? ft_strdup("oO") : ft_strdup("xX");
-		base.bot = (base.player == 1) ? ft_strdup("xX") : ft_strdup("oO");
+		base.me = (base.player == 1) ? "oO" : "xX";
+		base.bot = (base.player == 1) ? "xX" : "oO";
 		ft_strdel(&l);
 		get_next_line(0, &l);
-	i = 0;
-	if (ft_strlen(l) <= 10)
-	{
+		i = -1;
+		new.ym = ft_atoi(l + 8);
+		new.xm = ft_atoi(l + (ft_strrchr(l, ' ') - l));
 		ft_strdel(&l);
-		return (0);
-	}
-	xy = ft_strsplit((l + 8), 32);
-	new.xm = ft_atoi(xy[1]);
-	new.ym = ft_atoi(xy[0]);
-	ft_strdel(&l);
-	new.map = (char**)malloc(sizeof(char*) * new.ym + 1);
+		new.map = (char**)malloc(sizeof(char*) * new.ym + 1);
+		while (++i < new.ym)
+			new.map[i] = (char*)malloc(sizeof(char*) * new.xm + 1);
+		new.map[i] = NULL;
+		i = -1;
+		new.piece = (char**)malloc(sizeof(char*) * new.ym + 1);
+		while (++i < new.ym)
+			new.piece[i] = (char*)malloc(sizeof(char*) * new.xm + 1);
+		new.piece[i] = NULL;
 		while (game(&new, &base))
 			;
 	}

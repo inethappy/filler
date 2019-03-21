@@ -40,7 +40,7 @@ static int		write_storage(char **line, char **storage)
 		ft_memcpy(*line, *storage, i);
 		bufer = *storage;
 		*storage = ft_strdup(bufer + i + 1);
-		free(bufer);
+		ft_strdel(&bufer);
 		return (1);
 	}
 	*line = ft_strdup(*storage);
@@ -94,7 +94,6 @@ int				get_next_line(int fd, char **line)
 
 	res = 0;
 	var = 0;
-
 	if (!line || BUFF_SIZE <= 0 || fd < 0 || (res = read(fd, tmp, 0)) < 0)
 		return (-1);
 	*line = NULL;
@@ -108,7 +107,7 @@ int				get_next_line(int fd, char **line)
 	if (*line && res == 0)
 	{
 		if (storage[fd])
-			free(storage[fd]);
+			ft_strdel(&storage[fd]);
 		if (ft_strlen(*line) > 0)
 			return (1);
 	}
