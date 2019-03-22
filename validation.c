@@ -6,9 +6,8 @@ int p_error(char *s)
 	return (0);
 }
 
-int save_input_map(t_input *new)
+int save_input_map(t_input *new, t_filler *base)
 {
-	char **xy;
     char *l;
 	int i;
 
@@ -18,6 +17,7 @@ int save_input_map(t_input *new)
 		return 0;
 	}
 	free(l);//	ft_strdel(&l);
+	i = 0;
 	while (i < new->ym)
 	{
 		if (get_next_line(0, &l) <= 0)
@@ -25,24 +25,23 @@ int save_input_map(t_input *new)
 			free(l);
 			return 0;
 		}
-		new->map[i] = ft_strcpy(new->map[i], (l + 4));
+		base->map[i] = ft_strcpy(base->map[i], (l + 4));
 		free(l);
 		i++;
 	}
 	return (1);
 }
 
-int save_input_piece(t_input *new)
+int save_input_piece(t_input *new, t_filler *base)
 {
 	char **xy;
     char *l;
 	int i;
 
-	FILE *fd;
+	// FILE *fd;
 
-	fd = fopen("test1.txt", "a");
+	// fd = fopen("test1.txt", "a");
 	i = 0;
-	new->i = -1;
 	if (!get_next_line(0, &l))
 	{
 		ft_strdel(&l);
@@ -59,13 +58,13 @@ int save_input_piece(t_input *new)
 			free(l);
 			return 0;
 		}
-		new->piece[i] = ft_strcpy(new->piece[i], l);
+		base->piece[i] = ft_strcpy(base->piece[i], l);
 		free(l);
 		i++;
 	}
-	while (new->piece[i])
+	while (base->piece[i])
 	{
-		ft_bzero(new->piece[i], ft_strlen(new->piece[i]));
+		ft_bzero(base->piece[i], ft_strlen(base->piece[i]));
 		i++;
 	}
 	return (1);

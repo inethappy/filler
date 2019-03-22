@@ -11,9 +11,10 @@
 
 typedef struct s_filler
 {
-	int	player;
 	char *me;
 	char *bot;
+	char **map;
+	char **piece;
 }				t_filler;
 
 typedef struct s_input
@@ -22,20 +23,27 @@ typedef struct s_input
 	int xm;
 	int y;
 	int ym;
-	int i;
-	char **map;
-	char **piece;
+	int	player;
 	int xres;
 	int yres;
 	int min_d;
+	int jm;
+	int im;
 
 }				t_input;
 
-int save_input_piece(t_input *new);
-int save_input_map(t_input *new);
+int save_input_piece(t_input *new, t_filler *base);
+int save_input_map(t_input *new, t_filler *base);
 char *valid(char *l, t_input *new, char *chr, int x);
 int p_error(char *s);
-
-
+void save_input(t_input *new, t_filler *base);
+int game(t_input *new, t_filler *base);
+void ft_next_move(t_input *new, t_filler *base);
+void put_piece(t_input *new, t_filler *base);
+int check(t_filler *base, t_input *new, int jp, int ip);
+int check_figure(t_filler *base, t_input *new, int *jp, int *ip);
+int check_tail(t_filler *base, t_input *new, int jp, int ip);
+void search_path(t_filler *base, t_input *new, int cjp, int cip);
+int calculate(t_filler *base, t_input *new, int je, int ie, int jp, int ip);
 
 #endif
