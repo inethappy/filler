@@ -1,9 +1,0 @@
-{
-	"files.associations": {
-		"libft.h": "c",
-		"stdio.h": "c",
-		"filler.h": "c",
-		"ft_printf.h": "c",
-		"fcntl.h": "c"
-	}
-}
