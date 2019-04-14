@@ -6,7 +6,7 @@
 /*   By: mkotytsk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/23 12:50:05 by mkotytsk          #+#    #+#             */
-/*   Updated: 2019/03/23 12:50:08 by mkotytsk         ###   ########.fr       */
+/*   Updated: 2019/04/12 12:15:15 by mkotytsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,5 @@ int		main(void)
 		while (game(&new, &base))
 			;
 	}
-	// system("leaks mkotytsk.filler > test");
 	return (0);
 }

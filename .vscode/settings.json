@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"filler.h": "c",
+		"libft.h": "c",
+		"visual.h": "c"
+	}
+}

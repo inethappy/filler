@@ -3,6 +3,7 @@ CC			:=	gcc
 CFLAGS		:=	-Wall -Wextra -Werror
 
 SOURCES_DIR	:= ./src/
+VISUAL_DIR	:= ./visualization/
 OBJECTS_DIR	:= ./obj/
 INCLUDE_DIR	:= ./inc/
 LIB_DIR		:= ./lib/
@@ -15,8 +16,11 @@ LIBFT_INC	:= $(LIBFT_DIR)
 LIBFT_FL	:= -lft -L $(LIBFT_DIR)
 PRINTF_FL	:= $(LIB_DIR)ft_printf/libftprintf.a
 PRINTF_INC	:= $(LIB_DIR)ft_printf
+VISUAL_HDR	:= $(VISUAL_DIR)visual.h
 
 LIB_FLAGS	:= $(LIBFT_FL) $(PRINTF_FL)
+
+FRAM = -L minilibx -I minilibx -lmlx -framework OpenGL -framework AppKit
 
 HEADER_FLAGS	:= -I $(INCLUDE_DIR) -I $(LIBFT_INC) -I $(PRINTF_INC)
 
@@ -36,8 +40,12 @@ $(OBJECTS_DIR)%.o: %.c
 $(LIBFT):
 		make -C $(LIBFT_DIR)
 
+visual:
+	$(CC) $(CFLAGS) $(VISUAL_DIR)main.c $(VISUAL_DIR)save_inp.c -o visual $(LIB_FLAGS) -I $(VISUAL_HDR) -I ../inc/ft_printf.h -I ../inc/libft.h $(FRAM)
+
 clean:
 	rm -rf $(OBJECTS)
+	rm -rf visual
 	make clean -C $(LIBFT_DIR)
 
 fclean: clean
